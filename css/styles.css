@@ -60,29 +60,51 @@ nav a:hover, #active{
 	margin: 0 auto;
 }
 
+nav:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
 
 /* gallery */
 
 #images{
-	width: 1300px;
-	height: 400px;
-	position: absolute;
-	left: 0;
-	top: 90px;
-	overflow: hidden;
+	background-color: red;
+	width: 1366px;
+	height: 700px;
+	position: relative;
+	top: 80px;
+	margin: 0 auto;
 }
 
 #images img{
-	width: 600px;
-	height: 400px;
-	display: inline-block;
-
+	width: 1366px;
+	height: 700px;	
 }
+
+#slider{
+	width: 1366px;
+	height: auto;
+	background-color: red;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 2;
+}
+
+#thumb{
+	width: 678px;
+	background-color: blue;
+	margin: 0 auto;
+}
+
+
 
 /* contact */
 
 footer {
-	position: fixed;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -90,6 +112,7 @@ footer {
 	display: block;
 	background-color: #4a576f;	
 	color: #ffffff;
+	clear: both;
 }
 
 footer div{
