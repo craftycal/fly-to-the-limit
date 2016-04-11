@@ -1,4 +1,12 @@
+html {
+	background-color: #222222;
+}
+
 body {
+	background-color: #ffffff;
+	width: 1366px;
+	display: block;
+	margin: 0 auto;
 	font-family: 'open sans', sans-serif;
 }
 h1 {
@@ -11,9 +19,7 @@ p {
 nav {
 	position: fixed;
 	top: 0;
-	left: 0;
-	right: 0;
-	width: auto;
+	width: 1366px;
 	height: 90px;
 	display: block;
 	background-color: #4a576f;	
@@ -60,11 +66,7 @@ nav a:hover, #active{
 	margin: 0 auto;
 }
 
-nav:after{
-    clear: both;
-    content: "";
-    display: block;
-}
+
 
 
 /* gallery */
@@ -72,57 +74,47 @@ nav:after{
 #images{
 	background-color: red;
 	width: 1366px;
-	height: 700px;
 	position: relative;
 	top: 80px;
 	margin: 0 auto;
+	clear: both;
 }
 
 #images img{
-	width: 1366px;
-	height: 700px;	
+	width: 25%;
+	height: auto;	
+	float: left;
+	padding: 0;
+	margin: 0;
 }
 
-#slider{
-	width: 1366px;
-	height: auto;
-	background-color: red;
-	display: block;
-	margin: 0 auto;
-	position: absolute;
-	z-index: 2;
-	
+#images:after{
+    clear: both;
+    content: "";
+    display: block;
 }
 
-#thumb{
-	width: 678px;
-	background-color: blue;
-	margin: 0 auto;
-}
+
 
 
 
 /* contact */
 
-footer {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: auto;
-	display: block;
+#contact-box {
+	clear: both;
+	width: 1366px;
+	height: 350px;
 	background-color: #4a576f;	
 	color: #ffffff;
-	clear: both;
 }
 
-footer div{
+
+#contact{
 	width: 40%;
 	padding: 20px 20px;
 	display: inline-block;
 	clear: both;
 } 
-
 
 
 iframe {
@@ -132,9 +124,11 @@ iframe {
 }
 
 
-
-
-
+iframe:after{
+    clear: both;
+    content: "";
+    display: block;
+}
 
 
 
