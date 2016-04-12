@@ -94,7 +94,18 @@ nav a:hover, #active{
 }
 
 
+article {
+	height: 400px;
+	width: 600px;
+	border: 2px dashed #333333;
+	margin: 0 auto;
+}
 
+article img {
+	float: right;
+	height:200px;
+	width: auto;
+}
 
 
 
