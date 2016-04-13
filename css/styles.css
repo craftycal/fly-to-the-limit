@@ -98,28 +98,59 @@ nav a:hover, #active{
 
 article {
 	height: 400px;
-	width: 600px;
+	width: 800px;
 	border: 2px dashed #333333;
 	margin: 0 auto;
 }
 
 article img {
 	position: relative;
-	top: 20px;
-	right: -100px;
-	float: right;
+	width: 400px;
+	padding: 20px 0;
 
 }
 
+#right img{
+	right: -200px;
+	float: right;
+
+	padding: 0;
+	margin: 0;	
+}
+
+#left img{
+	right: 200px;
+	float: left;
+
+	padding: 0;
+	margin: 0;	
+}
+
+#text-left{
+	float: right;
+	height: 100%;
+	width: 500px;
+
+	background-color: green;
+	padding: 0;
+	margin: 0;
+}
+#text-right{
+	float: left;
+	height: 100%;
+	width: 500px;
+
+	background-color: red;
+	padding: 0;
+	margin: 0;
+}
 
 
-
-
-
-
-
-
-
+article:after{
+    clear: both;
+    content: "";
+    display: block;
+}
 
 
 
