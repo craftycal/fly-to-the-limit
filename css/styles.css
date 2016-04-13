@@ -93,6 +93,8 @@ nav a:hover, #active{
     display: block;
 }
 
+/* flights */
+
 
 article {
 	height: 400px;
@@ -102,9 +104,11 @@ article {
 }
 
 article img {
+	position: relative;
+	top: 20px;
+	right: -100px;
 	float: right;
-	height:200px;
-	width: auto;
+
 }
 
 
