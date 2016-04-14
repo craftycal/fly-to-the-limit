@@ -8,11 +8,12 @@ body {
 	display: block;
 	margin: 0 auto;
 	font-family: 'open sans', sans-serif;
-	padding-top: 90px;
 }
+
 h1 {
 	font-size: large;
 }
+
 p {
 	font-size: normal;
 }
@@ -46,7 +47,7 @@ nav a{
 	font-size: large;
 }
 
-nav a:hover, #active{
+nav a:hover{
 	text-decoration: underline;
 }
 
@@ -77,6 +78,7 @@ nav a:hover, #active{
 	width: 1366px;
 	margin: 0 auto;
 	clear: both;
+	border-top: 80px solid #ffffff;
 }
 
 #images img{
@@ -93,64 +95,81 @@ nav a:hover, #active{
     display: block;
 }
 
+
+
+
+
 /* flights */
 
 
 article {
 	height: 400px;
 	width: 800px;
-	border: 2px dashed #333333;
-	margin: 0 auto;
+	border: 4px dashed #333333;
+	margin: 20px auto;
 }
 
 article img {
-	position: relative;
 	width: 400px;
-	padding: 20px 0;
-
+	height: auto;
 }
 
-#right img{
-	right: -200px;
-	float: right;
 
-	padding: 0;
-	margin: 0;	
-}
-
-#left img{
-	right: 200px;
-	float: left;
-
-	padding: 0;
-	margin: 0;	
-}
-
-#text-left{
+.right div{
 	float: right;
 	height: 100%;
 	width: 500px;
 
+
+/* bubble gum */
 	background-color: green;
-	padding: 0;
-	margin: 0;
+
+
 }
-#text-right{
+
+.right a img{	
+	float: left;
+	position: relative;
+	right: 200px;
+
+	
+/* bubble gum */
+	top: -350px;
+}
+
+
+
+
+.left div{
 	float: left;
 	height: 100%;
 	width: 500px;
 
+
+/* bubble gum */
 	background-color: red;
-	padding: 0;
-	margin: 0;
+	position: relative;		
+	top: -275px;	
+}
+
+.left a img{
+	float: right;
+	position: relative;
+	right: -200px;
+
+	
+/* bubble gum */
+	top: -620px;	
 }
 
 
-article:after{
-    clear: both;
-    content: "";
-    display: block;
-}
+
+
+
+
+
+
+
 
 
 
