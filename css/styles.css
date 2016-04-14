@@ -120,19 +120,13 @@ article img {
 	height: 100%;
 	width: 500px;
 
-
-/* bubble gum */
-	background-color: green;
-
-
+background-color: green;
 }
 
 .right a img{	
 	float: left;
 	position: relative;
-	right: 200px;
-
-	
+	right: 200px;	
 /* bubble gum */
 	top: -350px;
 }
@@ -144,10 +138,8 @@ article img {
 	float: left;
 	height: 100%;
 	width: 500px;
-
-
+background-color: red;
 /* bubble gum */
-	background-color: red;
 	position: relative;		
 	top: -275px;	
 }
@@ -155,9 +147,7 @@ article img {
 .left a img{
 	float: right;
 	position: relative;
-	right: -200px;
-
-	
+	right: -200px;	
 /* bubble gum */
 	top: -620px;	
 }
