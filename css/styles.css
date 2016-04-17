@@ -101,56 +101,80 @@ nav a:hover{
 
 /* flights */
 
+#flights {
+	border-top: 80px solid #ffffff;
+	overflow: hidden;
 
-article {
+}
+
+
+.container {
 	height: 400px;
 	width: 800px;
 	border: 4px dashed #333333;
 	margin: 20px auto;
 }
 
+article.right {
+	width: 900px;
+	min-height: 400px;
+	position: relative;
+	right: -50px;
+
+}
+
 article img {
 	width: 400px;
 	height: auto;
+	margin-top: 40px;
 }
 
 
-.right div{
+
+article.right .photo {
 	float: right;
-	height: 100%;
-	width: 500px;
-
-background-color: green;
+	width: 400px;
+	overflow: hidden;
+	padding: 0;
+	margin: none;
 }
 
-.right a img{	
+article.right .text {
+	background-color: green;
+	min-height: 400px;
+	width: 480px;
+	padding: 0;
+	margin: none;
 	float: left;
+}
+
+article.left {
+	width: 900px;
+	min-height: 400px;
 	position: relative;
-	right: 200px;	
-/* bubble gum */
-	top: -350px;
+	left: -50px;
 }
 
-
-
-
-.left div{
+article.left .photo {
 	float: left;
-	height: 100%;
-	width: 500px;
-background-color: red;
-/* bubble gum */
-	position: relative;		
-	top: -275px;	
+	width: 400px;
+	overflow: hidden;
+	padding: 0;
+	margin: none;
 }
 
-.left a img{
+article.left .text {
+	background-color: green;
+	min-height: 400px;
+	width: 480px;
+	padding: 0;
+	margin: none;
 	float: right;
-	position: relative;
-	right: -200px;	
-/* bubble gum */
-	top: -620px;	
 }
+
+
+
+
 
 
 
