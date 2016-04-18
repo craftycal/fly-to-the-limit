@@ -109,24 +109,23 @@ nav a:hover{
 
 
 .container {
-	height: 400px;
+	height: 350px;
 	width: 800px;
 	border: 4px dashed #333333;
-	margin: 20px auto;
+	margin: 40px auto;
 }
 
 article.right {
 	width: 900px;
-	min-height: 400px;
+	min-height: 350px;
 	position: relative;
-	right: -50px;
-
+	
 }
 
 article img {
 	width: 400px;
 	height: auto;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 
@@ -141,18 +140,19 @@ article.right .photo {
 
 article.right .text {
 	background-color: green;
-	min-height: 400px;
+	min-height: 250px;
 	width: 480px;
 	padding: 0;
 	margin: none;
 	float: left;
+	padding: 20px 0;	
 }
 
 article.left {
 	width: 900px;
-	min-height: 400px;
+	min-height: 350px;
 	position: relative;
-	left: -50px;
+	left: -100px;
 }
 
 article.left .photo {
@@ -165,11 +165,27 @@ article.left .photo {
 
 article.left .text {
 	background-color: green;
-	min-height: 400px;
+	min-height: 250px;
 	width: 480px;
 	padding: 0;
 	margin: none;
 	float: right;
+	padding: 20px 0;
+
+}
+
+button {
+	color: white;
+	background-color: #4a576f;
+	height: 40px;
+	width: 120px;
+	font-size: large;
+
+}
+
+button:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 
