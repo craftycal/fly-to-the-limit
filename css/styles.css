@@ -18,175 +18,175 @@ p {
 	font-size: normal;
 }
 
-nav {
-	position: fixed;
-	top: 0;
-	width: 1366px;
-	height: 90px;
-	display: block;
-	background-color: #4a576f;	
-	color: #ffffff;
-	z-index: 3;
-}
+/* Nav bar */
 
+	nav {
+		position: fixed;
+		top: 0;
+		width: 1366px;
+		height: 90px;
+		display: block;
+		background-color: #4a576f;	
+		color: #ffffff;
+		z-index: 3;
+	}
 
-nav ul {
-	float: right;
-	margin: 30px 40px;
-}
+	nav ul {
+		float: right;
+		margin: 30px 40px;
+	}
 
-nav li{
-	display: inline;
-	list-style: none;
-}
+	nav li{
+		display: inline;
+		list-style: none;
+	}
 
-nav a{
-	text-decoration: none;
-	padding: 10px;
-	color: #eeeeee;
-	font-size: large;
-}
+	nav a{
+		text-decoration: none;
+		padding: 10px;
+		color: #eeeeee;
+		font-size: large;
+	}
 
-nav a:hover{
-	text-decoration: underline;
-}
+	nav a:hover{
+		text-decoration: underline;
+	}
 
-#logo {
-	width: 150px;
-	height: 110px;
-	background-color: #6a253c;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	margin-left: 40px;
-	display: inline;
-	float: left;
-	border: solid 5px #6a253c;
-}
+	#logo {
+		width: 150px;
+		height: 110px;
+		background-color: #6a253c;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		margin-left: 40px;
+		display: inline;
+		float: left;
+		border: solid 5px #6a253c;
+	}
 
-#logo img{
-	display: block;
-	margin: 0 auto;
-}
-
+	#logo img{
+		display: block;
+		margin: 0 auto;
+	}
 
 
 
 /* gallery */
 
-#images{
-	background-color: red;
-	width: 1366px;
-	margin: 0 auto;
-	clear: both;
-	border-top: 80px solid #ffffff;
-}
+	#images{
+		background-color: red;
+		width: 1366px;
+		margin: 0 auto;
+		clear: both;
+		border-top: 80px solid #ffffff;
+	}
 
-#images img{
-	width: 25%;
-	height: auto;	
-	float: left;
-	padding: 0;
-	margin: 0;
-}
+	#images img{
+		width: 25%;
+		height: auto;	
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
 
-#images:after{
-    clear: both;
-    content: "";
-    display: block;
-}
+	#images:after{
+	    clear: both;
+	    content: "";
+	    display: block;
+	}
 
 
-
+	.section-break {
+		background-color: #4a576f;
+		width: 1366px;
+		margin: 0 auto;
+		padding: 10px 60px;
+		color: #ffffff;
+	}
 
 
 /* flights */
 
-#flights {
-	border-top: 80px solid #ffffff;
-	overflow: hidden;
+	#flights {
+		overflow: hidden;
+	}
 
-}
+	.container {
+		height: 350px;
+		width: 800px;
+		border: 4px dashed #333333;
+		margin: 40px auto;
+	}
+
+	article.right {
+		width: 900px;
+		min-height: 350px;
+		position: relative;
+	}
+
+	article img {
+		width: 400px;
+		height: auto;
+		margin-top: 20px;
+	}
+
+	article.right .photo {
+		float: right;
+		width: 400px;
+		overflow: hidden;
+		padding: 0;
+		margin: none;
+	}
+
+	article.right .text {
+		min-height: 300px;
+		width: 460px;
+		padding: 0;
+		margin-top: 20px;
+		float: left;
+		padding-left: 20px;	
+	}
+
+	article.left {
+		width: 900px;
+		min-height: 350px;
+		position: relative;
+		left: -100px;
+	}
+
+	article.left .photo {
+		float: left;
+		width: 400px;
+		overflow: hidden;
+		padding: 0;
+		margin: none;
+	}
+
+	article.left .text {
+		min-height: 300px;
+		width: 460px;
+		padding: 0;
+		margin-top: 20px;
+		float: right;
+		padding-right: 20px;	
+	}
 
 
-.container {
-	height: 350px;
-	width: 800px;
-	border: 4px dashed #333333;
-	margin: 40px auto;
-}
 
-article.right {
-	width: 900px;
-	min-height: 350px;
-	position: relative;
-	
-}
+	.text button {
+		position: absolute;
+		bottom: 30px;
+		color: white;
+		background-color: #4a576f;
+		height: 40px;
+		width: 120px;
+		font-size: large;
+	}
 
-article img {
-	width: 400px;
-	height: auto;
-	margin-top: 20px;
-}
-
-
-
-article.right .photo {
-	float: right;
-	width: 400px;
-	overflow: hidden;
-	padding: 0;
-	margin: none;
-}
-
-article.right .text {
-	background-color: green;
-	min-height: 250px;
-	width: 480px;
-	padding: 0;
-	margin: none;
-	float: left;
-	padding: 20px 0;	
-}
-
-article.left {
-	width: 900px;
-	min-height: 350px;
-	position: relative;
-	left: -100px;
-}
-
-article.left .photo {
-	float: left;
-	width: 400px;
-	overflow: hidden;
-	padding: 0;
-	margin: none;
-}
-
-article.left .text {
-	background-color: green;
-	min-height: 250px;
-	width: 480px;
-	padding: 0;
-	margin: none;
-	float: right;
-	padding: 20px 0;
-
-}
-
-button {
-	color: white;
-	background-color: #4a576f;
-	height: 40px;
-	width: 120px;
-	font-size: large;
-
-}
-
-button:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
+	.text button:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
 
 
 
