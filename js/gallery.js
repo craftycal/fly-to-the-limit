@@ -39,6 +39,24 @@ slider.appendChild(prev);
 // show the firest image
 slider.style.backgroundImage = "url("+ imageSoursces[0] +")";
 
+// attach event to buttons, listen for clicks
+next.onclick = changePicture;
+prev.onclick = changePicture;
+
+function changePicture() {
+
+	// what image is in use
+	var imageInUse = slider.style.backgroundImage;
+
+	// extract image scr
+	var bits = imageInUse.split('"');
+
+	console.log(bits);
+}
+
+
+
+
 
 
 
