@@ -1,6 +1,4 @@
-html {
-	background-color: #222222;
-}
+html {background-color: #222222; }
 
 body {
 	background-color: #ffffff;
@@ -10,13 +8,9 @@ body {
 	font-family: 'open sans', sans-serif;
 }
 
-h1 {
-	font-size: large;
-}
+h1 {font-size: large; }
 
-p {
-	font-size: normal;
-}
+p {font-size: normal; }
 
 /* Nav bar */
 
@@ -74,7 +68,7 @@ p {
 /* gallery */
 
 	#images{
-		background-color: red;
+		background-color: #ffffff;
 		width: 1366px;
 		margin: 0 auto;
 		clear: both;
@@ -98,12 +92,32 @@ p {
 /* javeScript gallery */
 
 	#slider {
-		width: 400px;
-		height: 300px;
+		border-top: 80px solid #ffffff;
+		width: 1366px;
+		height: 900px;
 		background-color: #333333;
+		background-size: cover;
 	}	
 
-/* breaks */
+	/* gallery buttons */
+	#prev,
+	#next {
+		height: 900px;
+		cursor: pointer;
+		background: none;
+		border: none;
+	}
+
+			#prev {float: left;}
+			#next {float: right;}
+
+			#prev:hover{background-color: #eeeeee; opacity: 0.5;}		
+			#next:hover{background-color: #eeeeee; opacity: 0.5;}		
+			
+			#prev:focus {outline: 0;}
+			#next:focus {outline: 0;}
+
+/* section break */
 
 	.section-break {
 		background-color: #4a576f;
@@ -113,27 +127,9 @@ p {
 		color: #ffffff;
 	}
 
-	#prev,
-	#next {
-		height: 300px;
-		cursor: pointer;
-		background: none;
-		border: none;
-	}
-
-		#prev {float: left;}
-		#next {float: right;}
-
-		#prev:hover{background-color: #eeeeee; opacity: 0.5;}		
-		#next:hover{background-color: #eeeeee; opacity: 0.5;}		
-		
-		#prev:focus {outline: 0;}
-		#next:focus {outline: 0;}
 /* flights */
 
-	#flights {
-		overflow: hidden;
-	}
+	#flights {overflow: hidden;}
 
 	.container {
 		height: 350px;

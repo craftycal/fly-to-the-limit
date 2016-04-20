@@ -1,11 +1,15 @@
 // get all the links of the images
-var allImages = document.querySelectorAll("#images img")
+var allImages = document.querySelectorAll("#images img");
+
+// console.log(allImages[0].);
 
 var imageSoursces = [];
 
 for (var i = 0; i < allImages.length; i++) {
-	imageSoursces.push( allImages[i].src);
+	imageSoursces.push( allImages[i].parentNode.href);
 }
+
+console.log(imageSoursces);
 
 // delete all images on page
 var galleryContainer = document.querySelector("#gallery");
