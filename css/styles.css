@@ -90,7 +90,7 @@ body {
 	}
 
 
-	.section-break {
+ 	.section-break {
 		background-color: #4a576f;
 		width: 1366px;
 		margin: 0 auto;
@@ -100,7 +100,7 @@ body {
 	}
 
 
-/* flights */
+/*flights */
 
 	#flights {
 		overflow: hidden;
@@ -189,14 +189,13 @@ body {
 		margin: 0 auto;
 		width: 1000px;
 		height: auto;
-		background-color: yellow;
 	}
 
 	.pilot-container {
 		margin: 60px 20px;
 		float: left;
 		width: 450px;
-		height: 500px;
+		height: 540px;
 		border: 4px dashed #333333;
 	}
 
@@ -207,13 +206,7 @@ body {
 
 	}
 
-	#pilots-text h1{
-		font-size: 18px;
-	}
 
-		#pilots-text p{
-		font-size: 14px;
-	}
 
 
 
