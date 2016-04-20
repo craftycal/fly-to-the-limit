@@ -26,22 +26,22 @@ var next = document.createElement("button");
 var prev = document.createElement("button");
 
 // add button id's
-next.id = "next";
 prev.id = "prev";
+next.id = "next";
 
-next.innerHTML = "next";
-prev.innerHTML = "prev"; 
+prev.innerHTML = '<img id="img1" src="img/arrow_l.png">'; 
+next.innerHTML = '<img id="img1" src="img/arrow_r.png">';
 
 // add buttons to slider
-slider.appendChild(next);
 slider.appendChild(prev);
+slider.appendChild(next);
 
 // show the firest image
 slider.style.backgroundImage = "url("+ imageSoursces[0] +")";
 
 // attach event to buttons, listen for clicks
-next.onclick = changePicture;
 prev.onclick = changePicture;
+next.onclick = changePicture;
 
 function changePicture() {
 
@@ -52,6 +52,40 @@ function changePicture() {
 	var bits = imageInUse.split('"');
 
 	console.log(bits);
+
+	//save the link inside a variable
+	var url = bits[1];
+
+	// find out what index is in use on image src
+	var index = imageSoursces.indexOf( url );
+
+	console.log(index);
+
+
+	// if the next button is clicked
+	if( this.id == "next"){
+		index++
+
+		//if index is beond last img
+		if( index == imageSoursces.length) {
+			index = 0;
+		} 
+
+	} else {
+		index--;
+
+		//if before the first image
+		if( index == -1) {
+			index = imageSoursces.length -1;
+		}
+	}
+
+	// get the new url
+	var newUrl = imageSoursces[index]
+
+	// change picture in slider
+	slider.style.backgroundImage = 'url('+ newUrl +')';
+
 }
 
 

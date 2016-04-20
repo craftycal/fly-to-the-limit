@@ -113,7 +113,22 @@ p {
 		color: #ffffff;
 	}
 
+	#prev,
+	#next {
+		height: 300px;
+		cursor: pointer;
+		background: none;
+		border: none;
+	}
 
+		#prev {float: left;}
+		#next {float: right;}
+
+		#prev:hover{background-color: #eeeeee; opacity: 0.5;}		
+		#next:hover{background-color: #eeeeee; opacity: 0.5;}		
+		
+		#prev:focus {outline: 0;}
+		#next:focus {outline: 0;}
 /* flights */
 
 	#flights {
