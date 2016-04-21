@@ -271,6 +271,10 @@ p {font-size: 14px; }
 
 	}
 
+	.clear {
+		clear: both;
+	}
+
 /* contact */
 
 #contact-box {
@@ -314,12 +318,14 @@ p {font-size: 14px; }
 }
 
 form h2{
+	display: inline;
 	font-size: 16px;
 	font-weight: normal;
 }
 
-form {
-
+input, 
+select {
+	display: inline;
 }
 
 

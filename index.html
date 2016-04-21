@@ -155,6 +155,8 @@
 				</article>	
 			</div>	
 
+			<br class="clear">
+			
 				<div class="pilot-container">
 					<article class="pilot-content">						
 						<div class="pilot-photo">
@@ -178,6 +180,7 @@
 						</div>
 					</article>
 				</div>
+
 
 				<div class="pilot-container">
 					<article class="pilot-content">						
@@ -243,29 +246,30 @@
 
 
 			    		<div id="form-box">
-			    			<form>
+			    			<form name="booking" id="booking" method="post" action="http://craftycal.github.io/fly-to-the-limit" onsubmit="return validateForm();">
+			    				 <div>
 			    				 <h2>Name:</h2>
-			    				 <input type="text" name="firstname">
-
+			    				 <input type="text" id="firstname" name="firstname">
+								</div>
 								 <h2>Phone Number:</h2>
-								 <input type="tel" name="number">
+								 <input type="tel" id="number" name="number"><br><br>
 
 								 <h2>Email:</h2>
-								 <input type="email" name="email">
+								 <input type="email" id="email" name="email"><br><br>
 
 								 <hr>
 
 								 <h2>Type of filght:</h2>
-								 <select name="Aircraft">
+								 <select id="aircraft" name="aircraft">
 								 	<option value="fixed-wing">Tour</option>
 	 								<option value="amphibian-aircraft">Amphibian Aircraft</option>
 	  								<option value="stunt-plane">Stunt Plane</option>
 	  								<option value="helicopter">Helicopter</option>
 									<option value="glider">Glider</option>
- 								 </select>
+ 								 </select><br><br>
 
  								 <h2>Number of passengers</h2>
- 								 <select name="passengers">
+ 								 <select id="passengers" name="passengers">
 								 	<option value="1">1</option>
 	 								<option value="2">2</option>
 	  								<option value="3">3</option>
@@ -273,33 +277,33 @@
 									<option value="5">5</option>
 									<option value="6">6</option>
 									<option value="7">7</option>
- 								 </select>
+ 								 </select><br><br>
 
 								 <h2>Departing:</h2>
-								 <input type="date" name="departing">
+								 <input type="date" id="departing" name="departing"><br><br>
 
 								 <h2>time:</h2>
-								 <input type="time" name="time">
+								 <input type="time" id="time" name="time"><br><br>
 
 								 <h2>Length</h2>
-								 <input type="range" name="points" min="1" max="5">
+								 <input type="range" id="points" name="points" min="1" max="5"><br><br>
 
 								 <hr>
 
 								 <h2>Address:</h2>
-								 <input type="text" name="address">
+								 <input type="text" id="address" name="address"><br><br>
 
 								 <h2>City:</h2>
-								 <input type="text" name="city">
+								 <input type="text" id="city" name="city"><br><br>
 
 								 <h2>Country:</h2>
-								 <input type="text" name="country">
+								 <input type="text" id="country" name="country"><br><br>
 
 
 
 								 <br>
 								 <br>
-								 <button a href="#">Submit</button>
+								 <input type="submit" value="submit">
 
 			    			</form>
 			    		</div>	
@@ -319,5 +323,6 @@
 
 	
 		<script src="js/gallery.js"></script>
+		<script src="js/form.js"></script>
 	</body>
 </html>
