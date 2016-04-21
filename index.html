@@ -244,60 +244,89 @@
 							</div>	
 			    		</div>
 
+       <!-- form -->
 
 			    		<div id="form-box">
 			    			<form name="booking" id="booking" method="post" action="http://craftycal.github.io/fly-to-the-limit" onsubmit="return validateForm();">
-			    				 <div>
-			    				 <h2>Name:</h2>
-			    				 <input type="text" id="firstname" name="firstname">
+
+
+			    				<div>
+			    					 <lable>Name:</lablable>
+			    					 <input type="text" id="name" name="name">
 								</div>
-								 <h2>Phone Number:</h2>
-								 <input type="tel" id="number" name="number"><br><br>
 
-								 <h2>Email:</h2>
-								 <input type="email" id="email" name="email"><br><br>
+								<div>
+ 									<lable>Phone Number:</lable>
+									<input type="tel" id="number" name="number"><br><br>
+								</div>
+								
+								<div>
+									 <lable>Email:</lable>
+									 <input type="email" id="email" name="email"><br><br>
+								</div>
 
-								 <hr>
-
-								 <h2>Type of filght:</h2>
-								 <select id="aircraft" name="aircraft">
-								 	<option value="fixed-wing">Tour</option>
-	 								<option value="amphibian-aircraft">Amphibian Aircraft</option>
-	  								<option value="stunt-plane">Stunt Plane</option>
-	  								<option value="helicopter">Helicopter</option>
-									<option value="glider">Glider</option>
- 								 </select><br><br>
-
- 								 <h2>Number of passengers</h2>
- 								 <select id="passengers" name="passengers">
-								 	<option value="1">1</option>
-	 								<option value="2">2</option>
-	  								<option value="3">3</option>
-	  								<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
- 								 </select><br><br>
-
-								 <h2>Departing:</h2>
-								 <input type="date" id="departing" name="departing"><br><br>
-
-								 <h2>time:</h2>
-								 <input type="time" id="time" name="time"><br><br>
-
-								 <h2>Length</h2>
-								 <input type="range" id="points" name="points" min="1" max="5"><br><br>
 
 								 <hr>
 
-								 <h2>Address:</h2>
-								 <input type="text" id="address" name="address"><br><br>
 
-								 <h2>City:</h2>
-								 <input type="text" id="city" name="city"><br><br>
+								<div>
+									 <lable>Type of filght:</lable>
+									 <select id="aircraft" name="aircraft">
+									 	<option value="fixed-wing">Tour</option>
+		 								<option value="amphibian-aircraft">Amphibian Aircraft</option>
+		  								<option value="stunt-plane">Stunt Plane</option>
+		  								<option value="helicopter">Helicopter</option>
+										<option value="glider">Glider</option>
+	 								 </select><br><br>
+								</div>
 
-								 <h2>Country:</h2>
-								 <input type="text" id="country" name="country"><br><br>
+									<div>
+		 								 <lable>Number of passengers</lable>
+		 								 <select id="passengers" name="passengers">
+										 	<option value="1">1</option>
+			 								<option value="2">2</option>
+			  								<option value="3">3</option>
+			  								<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+		 								 </select><br><br>
+									</div>
+
+									<div>
+										<lable>Departing:</lable>
+										<input type="date" id="departing" name="departing"><br><br>
+									</div>
+
+									<div>
+										<lable>time:</lable>
+										<input type="time" id="time" name="time"><br><br>
+									</div>
+
+									<div>
+										<lable>Length</lable>
+										<input type="range" id="length" name="length" min="1" max="5"><br><br>
+									</div>
+
+
+									<hr>
+
+
+									<div>
+										<hlable>Address:</lable>
+										<input type="text" id="address" name="address"><br><br>
+									</div>
+
+									<div>
+										<lable>City:</lable>
+										<input type="text" id="city" name="city"><br><br>
+									</div>
+
+									<div>
+										<lable>Country:</lable>
+										<input type="text" id="country" name="country"><br><br>
+									</div>
+
 
 
 
