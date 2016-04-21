@@ -44,15 +44,15 @@ var totalErrors = 0;
 
 // name
 if(namePattern.test(nameInput.value)){
-	nameMessage.innerHTML = "";
+	nameMessage.innerHTML = " ";
 } else {
-	nameMessage.innerHTML = "*";
+	nameMessage.innerHTML = "* name invalid";
 	totalErrors ++;
 }
 
 // number
 if(numberPattern.test(nameInput.value)){
-	numberMessage.innerHTML = "";
+	numberMessage.innerHTML = " ";
 } else {
 	numberMessage.innerHTML = "*";
 	totalErrors ++;
@@ -61,7 +61,7 @@ if(numberPattern.test(nameInput.value)){
 
 // email
 if(emailPattern.test(nameInput.value)){
-	emailMessage.innerHTML = "";
+	emailMessage.innerHTML = " ";
 } else {
 	emailMessage.innerHTML = "*";
 	totalErrors ++;
@@ -70,7 +70,7 @@ if(emailPattern.test(nameInput.value)){
 
 // address
 if(addressPattern.test(nameInput.value)){
-	addressMessage.innerHTML = "";
+	addressMessage.innerHTML = " ";
 } else {
 	addressMessage.innerHTML = "*";
 	totalErrors ++;
@@ -79,7 +79,7 @@ if(addressPattern.test(nameInput.value)){
 
 // country
 if(countryPattern.test(nameInput.value)){
-	countryMessage.innerHTML = "";
+	countryMessage.innerHTML = " ";
 } else {
 	countryMessage.innerHTML = "*";
 	totalErrors ++;
