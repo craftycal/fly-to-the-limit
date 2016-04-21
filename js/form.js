@@ -1,32 +1,32 @@
 
 // find the form
-var bookingForm = document.queryselector("#booking");
+var bookingForm = document.querySelector("#booking");
 
 // referances to input filds
-var name = document.queryselector("#name");
-var number = document.queryselector("#number");
-var email = document.queryselector("#email");
-var aircraft = document.queryselector("#aircraft");
-var passengers = document.queryselector("#passengers");
-var departing = document.queryselector("#departing");
-var time = document.queryselector("#time");
-var length = document.queryselector("#length");
-var address = document.queryselector("#address");
-var city = document.queryselector("#city");
-var country = document.queryselector("#country");
+var nameInput = document.querySelector("#name");
+var numberInput = document.querySelector("#number");
+var emailInput = document.querySelector("#email");
+var aircraftInput = document.querySelector("#aircraft");
+var passengersInput = document.querySelector("#passengers");
+var departingInput = document.querySelector("#departing");
+var timeInput = document.querySelector("#time");
+var lengthInput = document.querySelector("#length");
+var addressInput = document.querySelector("#address");
+var cityInput = document.querySelector("#city");
+var countryInput = document.querySelector("#country");
 
 // messages
-var nameMessage = document.queryselector("#name-message");
-var numberMessage = document.queryselector("#number-message");
-var emailMessage = document.queryselector("#email-message");
-var aircraftMessage = document.queryselector("#aircraft-message");
-var passengersMessage = document.queryselector("#passengers-message");
-var departingMessage = document.queryselector("#departing-message");
-var timeMessage = document.queryselector("#time-message");
-var lengthMessage = document.queryselector("#length-message");
-var addressMessage = document.queryselector("#address-message");
-var cityMessage = document.queryselector("#city-message");
-var countryMessage = document.queryselector("#country-message");
+var nameMessage = document.querySelector("#name-message");
+var numberMessage = document.querySelector("#number-message");
+var emailMessage = document.querySelector("#email-message");
+var aircraftMessage = document.querySelector("#aircraft-message");
+var passengersMessage = document.querySelector("#passengers-message");
+var departingMessage = document.querySelector("#departing-message");
+var timeMessage = document.querySelector("#time-message");
+var lengthMessage = document.querySelector("#length-message");
+var addressMessage = document.querySelector("#address-message");
+var cityMessage = document.querySelector("#city-message");
+var countryMessage = document.querySelector("#country-message");
 
 // patterns 
 var namePattern = new RegExp("^[a-zA-Z .'-]{1,100");
@@ -47,7 +47,7 @@ if(namePattern.test(nameInput.value)){
 	nameMessage.innerHTML = "";
 } else {
 	nameMessage.innerHTML = "*";
-	totalErrors ++
+	totalErrors ++;
 }
 
 // number
@@ -55,7 +55,7 @@ if(numberPattern.test(nameInput.value)){
 	numberMessage.innerHTML = "";
 } else {
 	numberMessage.innerHTML = "*";
-	totalErrors ++
+	totalErrors ++;
 }
 
 
@@ -64,7 +64,7 @@ if(emailPattern.test(nameInput.value)){
 	emailMessage.innerHTML = "";
 } else {
 	emailMessage.innerHTML = "*";
-	totalErrors ++
+	totalErrors ++;
 }
 
 
@@ -73,7 +73,7 @@ if(addressPattern.test(nameInput.value)){
 	addressMessage.innerHTML = "";
 } else {
 	addressMessage.innerHTML = "*";
-	totalErrors ++
+	totalErrors ++;
 }
 
 
@@ -82,7 +82,7 @@ if(countryPattern.test(nameInput.value)){
 	countryMessage.innerHTML = "";
 } else {
 	countryMessage.innerHTML = "*";
-	totalErrors ++
+	totalErrors ++;
 }
 
 // stop form from submitting if there is a error
