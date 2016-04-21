@@ -222,13 +222,33 @@ p {font-size: 14px; }
 		cursor: pointer;
 	}
 
-	/* pilots */
+	/* about */
 
-	#pilots {
+	#fttl {
+		border: 4px dashed #333333;
+		width: 940px;
+		height: 400px;
 		margin: 0 auto;
-		width: 1366px;
-		height: auto;
+		margin-bottom: 80px;
 	}
+
+	#fttl-text {
+		padding: 24px;
+	}
+
+	#fttl-img {
+		position: relative;
+		bottom: 50px;
+		float: right;
+		margin-right: 24px;
+	}
+
+	#fttl-text-sub {
+		width: 400px;
+		float: left;
+	}
+
+	/* pilots */
 
 	#center-box {
 		width: 1000px;
