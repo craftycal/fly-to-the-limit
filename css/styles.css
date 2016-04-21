@@ -271,41 +271,6 @@ p {font-size: 14px; }
 
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* contact */
 
 #contact-box {
@@ -325,13 +290,6 @@ p {font-size: 14px; }
 } 
 
 
-/*iframe {
-	display: inline-block;
-	float: right;
-	padding: 20px;
-}*/
-
-
 #address {
 	display: inline-block;
 	width: 15%;
@@ -343,6 +301,60 @@ p {font-size: 14px; }
     content: "";
     display: block;
 }
+
+
+
+/* booking */ 
+
+#form-box{
+	background-color: #ffffff;
+	width: 900px;
+	height: 900px;
+	overflow: scroll;
+}
+
+form h2{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+form {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
