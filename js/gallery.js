@@ -9,7 +9,6 @@ for (var i = 0; i < allImages.length; i++) {
 	imageSoursces.push( allImages[i].parentNode.href);
 }
 
-console.log(imageSoursces);
 
 // delete all images on page
 var galleryContainer = document.querySelector("#gallery");

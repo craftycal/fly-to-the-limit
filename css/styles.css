@@ -278,9 +278,11 @@ p {font-size: 14px; }
 /* contact */
 
 #contact-box {
+	background-color: red;
+	width: 1366px;
+	margin: 0 auto;
 	clear: both;
 	width: 1366px;
-
 	background-color: #4a576f;	
 	color: #ffffff;
 }
