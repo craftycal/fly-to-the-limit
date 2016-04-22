@@ -1,8 +1,9 @@
-/*html { background-color: #222222; } */
+html { height: 100% }
 
 body {
 	background-color: #ffffff;
 	width: 1366px;
+	height: 100%;
 	display: block;
 	margin: 0 auto;
 	font-family: 'open sans', sans-serif;
@@ -315,7 +316,8 @@ p {font-size: 14px; }
 
 #form-box{
 	display: none;
-	position: absolute;
+	position: fixed;
+	margin: 0 auto;
 	z-index: 6;
 	background-color: green;
 	border: 2px solid #333333;
@@ -334,6 +336,14 @@ form h2{
 input, 
 select {
 	display: inline;
+}
+
+#fill {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background-color: #333333;
 }
 
 /* map */
