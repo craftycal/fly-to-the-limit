@@ -283,6 +283,7 @@ p {font-size: 14px; }
 	margin: 0 auto;
 	clear: both;
 	width: 1366px;
+
 	background-color: #4a576f;	
 	color: #ffffff;
 }
@@ -328,6 +329,12 @@ form h2{
 input, 
 select {
 	display: inline;
+}
+
+/* map */
+#map{
+  height: 400px;
+  margin: 0;
 }
 
 
