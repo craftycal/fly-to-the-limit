@@ -92,6 +92,56 @@ if (totalErrors > 0) {
 
 }
 
+function showForm() {
+	var bookingForm = document.querySelector ("#form-box");
+	bookingForm.style.display="block";
+}
+
+function exitForm() {
+	var bookingForm = document.querySelector ("#form-box");
+	bookingForm.style.display="none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

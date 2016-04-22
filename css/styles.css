@@ -297,7 +297,7 @@ p {font-size: 14px; }
 } 
 
 
-#address {
+#address-footer {
 	display: inline-block;
 	width: 15%;
 	padding: 20px 40px;
@@ -314,11 +314,16 @@ p {font-size: 14px; }
 /* booking */ 
 
 #form-box{
-	background-color: #ffffff;
+	display: none;
+	position: absolute;
+	z-index: 6;
+	background-color: green;
+	border: 2px solid #333333;
 	width: 900px;
-	height: 900px;
-	overflow: scroll;
+	height: 700px;
+	top: 100px;
 }
+
 
 form h2{
 	display: inline;

@@ -61,7 +61,7 @@
 							<h1>Fixed Wing</h1>
 							<p>We have a range of fixed wing aircraft available each providing a unique experience. The Cessna Turbo Stationair is capable of carrying five passengers and Cessna- 172 Skyhawk P three passengers are perfect for most charter between tarmac and scenic tours. </p>
 							<p>$350/hr</p>
-							<button a href="#">Book now</button>
+							<button onclick="javascript:showForm();">Book now</button>
 						</div>
 						<div class="photo">
 							<a href="img/originals/image9.jpg" target="_blank"><img src="img/4x3/image9-4x3.jpg"></a>
@@ -76,7 +76,7 @@
 							<h1>Amphibian aircraft</h1>
 							<p>We also have a Cessna Caravan Amphibian aircraft capable of taking off and landing in water, it can carry seven people and is perfect for visits to the beautiful lakes around Wanaka.</p>
 							<p>$350/hr</p>
-							<button a href="#">Book now</button>
+							<button onclick="javascript:showForm();">Book now</button>
 						</div>
 						<div class="photo">
 							<a href="img/originals/amphibian-aircraft.jpg" target="_blank"><img src="img/4x3/amphibian-aircraft-4x3.jpg"></a>
@@ -92,7 +92,7 @@
 							<h1>Stunt plane</h1>
 							<p>If you're looking for a more extreme experience our Extra EA‐200 stunt plane is capable of taking one passenger on an adrenaline rush like no other.</p>
 							<p>$350/hr</p>
-							<button a href="#">Book now</button>
+							<button onclick="javascript:showForm();">Book now</button>
 						</div>
 						<div class="photo">
 							<a href="img/originals/stunt.jpg" target="_blank"><img id="img1" src="img/4x3/stunt-4x3.jpg"></a>
@@ -108,7 +108,7 @@
 							<h1>Helicopter</h1>
 							<p>The Robinson R 44 is capable of transporting three people to remote locations and is perfect to getting you where you need to go and pucking you back up again. <br><br> The maneuverability and stability of the Robinson R 44 also make it ideal for sightseeing and photography.</p>
 							<p>$450/hr</p>
-							<button a href="#">Book now</button>	
+							<button onclick="javascript:showForm();">Book now</button>	
 						</div>
 						<div class="photo">
 							<a href="img/originals/helicopter.jpg" target="_blank"><img src="img/4x3/helicopter-4x3.jpg"></a>
@@ -124,7 +124,7 @@
 							<h1>Glider</h1>
 							<p>If you're after a more peaceful experience gliding smoothly through the air then the DG Flugzeugbau DG-1001S glider is for you. This craft is can carry one passenger on a truly unique peaceful experience as you glide around taking in beautiful surroundings. </p>
 							<p>$1200/hr</p>
-							<button a href="#">Book now</button>
+							<button onclick="javascript:showForm();">Book now</button>
 						</div>
 						<div class="photo">
 							<a href="img/originals/glider.jpg" target="_blank"><img src="img/4x3/glider-4x3.jpg"></a>
@@ -232,7 +232,7 @@
 								Email: info@limit.co.nz</p>
 						</div>
 
-						<div id="address">
+						<div id="address-footer">
 							<h1>Address:</h1>
 
 							<p>Sir Henry Wigley Dr <br>
@@ -247,12 +247,13 @@
 								New Zealand</p>
 							</div>
 
-						<script src="http://maps.googleapis.com/maps/api/js"> </script>
+						
 						<script>
+
+							function initMap()
+							{							
 							var myCenter=new google.maps.LatLng(-44.818137, 168.953964);
 
-							function initialize()
-							{
 							var mapProp = {
 							  center:myCenter,
 							  zoom:8,
@@ -265,15 +266,20 @@
 							  position:new google.maps.LatLng(-44.723364, 169.244250),
 							  });
 
+							marker.setMap(map);
+
 							var marker=new google.maps.Marker({
 							  position:new google.maps.LatLng(-45.020500, 168.739767),
 							  });
+
 							marker.setMap(map);
 							}
 
-							google.maps.event.addDomListener(window, 'load', initialize);
+							
 						</script>
-							</head>
+						
+
+					</head>
 
 							<body>
 							<div id="googleMap" style="width:400px;height:304px;float:right; margin: 20px;"></div>
@@ -287,6 +293,8 @@
 
 			    		<div id="form-box">
 			    			<form name="booking" id="booking" method="post" action="http://craftycal.github.io/fly-to-the-limit" onsubmit="return validateForm();">
+
+			    				<button onclick="javascript:exitForm();">X</button>
 
 
 			    				<div>
@@ -351,7 +359,11 @@
 
 									<div>
 										<lable>Tour Duration</lable>
-										<input type="range" id="length" name="length" min="1" max="5">
+										<select id="duration" name="duration">
+										 	<option value="1">1</option>
+			 								<option value="2">2</option>
+			  								<option value="3">3</option>
+		 								 </select>
 										<span id="length-message"></span><br><br>
 									</div>
 
@@ -403,6 +415,6 @@
 	
 		<script src="js/gallery.js"></script>
 		<script src="js/form.js"></script>
-		<script src="js/map.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAkBwKsy6Kp4mwSLXTLiiH2eviJlM4LU1o&callback=initMap"> </script>
 	</body>
 </html>
