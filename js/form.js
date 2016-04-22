@@ -29,12 +29,12 @@ var cityMessage = document.querySelector("#city-message");
 var countryMessage = document.querySelector("#country-message");
 
 // patterns 
-var namePattern = new RegExp("^[a-zA-Z .'-]{1,100");
-var numberPattern = new RegExp("^[0-9 -]{7,20");
-var emailPattern = new RegExp("^[a-zA-Z@ .'-]{1,100");
-var addressPattern = new RegExp("^[a-zA-Z .'-]{4,250");
-var cityPattern = new RegExp("^[a-zA-Z .'-]{1,150");
-var countryPattern = new RegExp("^[a-zA-Z .'-]{,60");
+var namePattern = new RegExp("^[a-zA-Z .'-]{1,100}");
+var numberPattern = new RegExp("^[0-9 -]{7,20}");
+var emailPattern = new RegExp("^[a-zA-Z@ .'-]{1,100}");
+var addressPattern = new RegExp("^[a-zA-Z0-9 .'-]{4,250}");
+var cityPattern = new RegExp("^[a-zA-Z .'-]{1,150}");
+var countryPattern = new RegExp("^[a-zA-Z .'-]{1,60}");
 
 // on form submit
 bookingForm.onsubmit = function(event){
@@ -51,7 +51,7 @@ if(namePattern.test(nameInput.value)){
 }
 
 // number
-if(numberPattern.test(nameInput.value)){
+if(numberPattern.test(numberInput.value)){
 	numberMessage.innerHTML = " ";
 } else {
 	numberMessage.innerHTML = "*";
@@ -60,7 +60,7 @@ if(numberPattern.test(nameInput.value)){
 
 
 // email
-if(emailPattern.test(nameInput.value)){
+if(emailPattern.test(emailInput.value)){
 	emailMessage.innerHTML = " ";
 } else {
 	emailMessage.innerHTML = "*";
@@ -69,7 +69,7 @@ if(emailPattern.test(nameInput.value)){
 
 
 // address
-if(addressPattern.test(nameInput.value)){
+if(addressPattern.test(addressInput.value)){
 	addressMessage.innerHTML = " ";
 } else {
 	addressMessage.innerHTML = "*";
@@ -78,7 +78,7 @@ if(addressPattern.test(nameInput.value)){
 
 
 // country
-if(countryPattern.test(nameInput.value)){
+if(countryPattern.test(countryInput.value)){
 	countryMessage.innerHTML = " ";
 } else {
 	countryMessage.innerHTML = "*";
@@ -90,11 +90,10 @@ if (totalErrors > 0) {
 	console.log("error");
 	
 } else {
-	console.log("hur");
-	
+	onSub();
 
 }
-onSub();
+
 event.preventDefault();
 }
 
@@ -123,23 +122,23 @@ function showForm(tour) {
 			aircraftInput.value = "glider";
 		break;
 	}
-	var fill = document.querySelector ("#fill");
+	var fill = document.querySelector("#fill");
 	fill.style.display="block";
 
-	var bookingForm = document.querySelector ("#form-box");
+	var bookingForm = document.querySelector("#form-box");
 	bookingForm.style.display="block";
 }
 
 function exitForm() {
-	var fill = document.querySelector ("#fill");
+	var fill = document.querySelector("#fill");
 	fill.style.display="none";
 
-	var bookingForm = document.querySelector ("#form-box");
+	var bookingForm = document.querySelector("#form-box");
 	bookingForm.style.display="none";
 }
 
 function onSub() {
-	var centerBox = document.querySelector ("#center-box");
+	var centerBox = document.querySelector("#form-center-box");
 	centerBox.style.display="none";
 
 	var thankyouMessage = document.querySelector("#thankyou-message");
