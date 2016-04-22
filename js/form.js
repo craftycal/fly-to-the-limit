@@ -1,3 +1,7 @@
+var formContainer = document.querySelector("#form-box");
+
+galleryContainer.innerHTML = "";
+
 
 // find the form
 var bookingForm = document.querySelector("#booking");
