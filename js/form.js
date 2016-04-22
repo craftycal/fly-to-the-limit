@@ -46,7 +46,7 @@ var totalErrors = 0;
 if(namePattern.test(nameInput.value)){
 	nameMessage.innerHTML = " ";
 } else {
-	nameMessage.innerHTML = "* name invalid";
+	nameMessage.innerHTML = "*";
 	totalErrors ++;
 }
 
@@ -87,19 +87,63 @@ if(countryPattern.test(nameInput.value)){
 
 // stop form from submitting if there is a error
 if (totalErrors > 0) {
-	event.preventDefault();
-}
+	console.log("error");
+	
+} else {
+	console.log("hur");
+	
 
 }
+onSub();
+event.preventDefault();
+}
 
-function showForm() {
+
+// show or hide form
+function showForm(tour) {
+	switch(tour) {
+		case "fixed":
+			var aircraftInput = document.querySelector("#aircraft");
+			aircraftInput.value = "fixed-wing";
+		break;
+		case "amphibian":
+			var aircraftInput = document.querySelector("#aircraft");
+			aircraftInput.value = "amphibian-aircraft";
+		break;
+				case "stunt":
+			var aircraftInput = document.querySelector("#aircraft");
+			aircraftInput.value = "stunt-plane";
+		break;
+				case "hele":
+			var aircraftInput = document.querySelector("#aircraft");
+			aircraftInput.value = "helicopter";
+		break;
+				case "glider":
+			var aircraftInput = document.querySelector("#aircraft");
+			aircraftInput.value = "glider";
+		break;
+	}
+	var fill = document.querySelector ("#fill");
+	fill.style.display="block";
+
 	var bookingForm = document.querySelector ("#form-box");
 	bookingForm.style.display="block";
 }
 
 function exitForm() {
+	var fill = document.querySelector ("#fill");
+	fill.style.display="none";
+
 	var bookingForm = document.querySelector ("#form-box");
 	bookingForm.style.display="none";
+}
+
+function onSub() {
+	var centerBox = document.querySelector ("#center-box");
+	centerBox.style.display="none";
+
+	var thankyouMessage = document.querySelector("#thankyou-message");
+	thankyouMessage.style.display="block";
 }
 
 

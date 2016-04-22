@@ -284,7 +284,6 @@ p {font-size: 14px; }
 	margin: 0 auto;
 	clear: both;
 	width: 1366px;
-
 	background-color: #4a576f;	
 	color: #ffffff;
 }
@@ -315,21 +314,46 @@ p {font-size: 14px; }
 /* booking */ 
 
 #form-box{
+	padding: 40px;
+	box-sizing: border-box;
 	display: none;
 	position: fixed;
-	margin: 0 auto;
+	left: 350px;
 	z-index: 6;
-	background-color: green;
+	background-color: #ffffff;
 	border: 2px solid #333333;
 	width: 900px;
 	height: 700px;
 	top: 100px;
 }
 
+#center-box {
+	width: 500px;
+	margin:0 auto;
+}
+
+#exit {
+	float: right;
+}
+
+#submit {
+	font-size: 20px;
+	width: 150px;
+	height: 50px;
+}
+
+.message {
+	color: red;
+}
+
+label {
+	display: inline-block;
+	width: 200px;
+}
+
 
 form h2{
-	display: inline;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: normal;
 }
 
@@ -339,12 +363,29 @@ select {
 }
 
 #fill {
+	display: none;
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	z-index: 5;
-	background-color: #333333;
+	background-color: rgba(0,0,0,0.6);
+	top: 0;
+	left: 0;
 }
+
+#thankyou-message {
+	display: none;
+	margin-top: 150px;
+	text-align: center;
+	clear: both;
+}
+
+#thankyou-message p {
+	font-weight: lighter;
+	color: #6a253c;
+	background-color: #ffffff;
+}
+
 
 /* map */
 #map{

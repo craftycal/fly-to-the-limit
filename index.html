@@ -61,7 +61,7 @@
 							<h1>Fixed Wing</h1>
 							<p>We have a range of fixed wing aircraft available each providing a unique experience. The Cessna Turbo Stationair is capable of carrying five passengers and Cessna- 172 Skyhawk P three passengers are perfect for most charter between tarmac and scenic tours. </p>
 							<p>$350/hr</p>
-							<button onclick="javascript:showForm();">Book now</button>
+							<button onclick="javascript:showForm('fixed');">Book now</button>
 						</div>
 						<div class="photo">
 							<a href="img/originals/image9.jpg" target="_blank"><img src="img/4x3/image9-4x3.jpg"></a>
@@ -76,7 +76,7 @@
 							<h1>Amphibian aircraft</h1>
 							<p>We also have a Cessna Caravan Amphibian aircraft capable of taking off and landing in water, it can carry seven people and is perfect for visits to the beautiful lakes around Wanaka.</p>
 							<p>$350/hr</p>
-							<button onclick="javascript:showForm();">Book now</button>
+							<button onclick="javascript:showForm('amphibian');">Book now</button>
 						</div>
 						<div class="photo">
 							<a href="img/originals/amphibian-aircraft.jpg" target="_blank"><img src="img/4x3/amphibian-aircraft-4x3.jpg"></a>
@@ -92,7 +92,7 @@
 							<h1>Stunt plane</h1>
 							<p>If you're looking for a more extreme experience our Extra EA‐200 stunt plane is capable of taking one passenger on an adrenaline rush like no other.</p>
 							<p>$350/hr</p>
-							<button onclick="javascript:showForm();">Book now</button>
+							<button onclick="javascript:showForm('stunt');">Book now</button>
 						</div>
 						<div class="photo">
 							<a href="img/originals/stunt.jpg" target="_blank"><img id="img1" src="img/4x3/stunt-4x3.jpg"></a>
@@ -108,7 +108,7 @@
 							<h1>Helicopter</h1>
 							<p>The Robinson R 44 is capable of transporting three people to remote locations and is perfect to getting you where you need to go and pucking you back up again. <br><br> The maneuverability and stability of the Robinson R 44 also make it ideal for sightseeing and photography.</p>
 							<p>$450/hr</p>
-							<button onclick="javascript:showForm();">Book now</button>	
+							<button onclick="javascript:showForm('hele');">Book now</button>	
 						</div>
 						<div class="photo">
 							<a href="img/originals/helicopter.jpg" target="_blank"><img src="img/4x3/helicopter-4x3.jpg"></a>
@@ -124,7 +124,7 @@
 							<h1>Glider</h1>
 							<p>If you're after a more peaceful experience gliding smoothly through the air then the DG Flugzeugbau DG-1001S glider is for you. This craft is can carry one passenger on a truly unique peaceful experience as you glide around taking in beautiful surroundings. </p>
 							<p>$1200/hr</p>
-							<button onclick="javascript:showForm();">Book now</button>
+							<button onclick="javascript:showForm('glider');">Book now</button>
 						</div>
 						<div class="photo">
 							<a href="img/originals/glider.jpg" target="_blank"><img src="img/4x3/glider-4x3.jpg"></a>
@@ -291,29 +291,36 @@
 
        <!-- form -->
        					<div id="fill"></div>
-       					
+
 			    		<div id="form-box">
 			    			<form name="booking" id="booking" method="post" action="http://craftycal.github.io/fly-to-the-limit" onsubmit="return validateForm();">
 
-			    				<button onclick="javascript:exitForm();">X</button>
+			    				<button id="exit" onclick="javascript:exitForm();">X</button>
 
+			    				<div id="thankyou-message">
+			    					<h1>Thankyou for your booking</h1>
+			    					<hr> 
+			    					<p>we'll be in touch within two working days</p>
+			    				</div>
+
+			    				<div id="center-box">
 
 			    				<div>
-			    					 <lable>Name:</lablable>
+			    					 <label>Name:</label>
 			    					 <input type="text" id="name" name="name">
-			    					 <span id="name-message"></span><br><br>
+			    					 <span class="message" id="name-message"></span><br><br>
 								</div>
 
 								<div>
- 									<lable>Phone Number:</lable>
+ 									<label>Phone Number:</label>
 									<input type="tel" id="number" name="number">
-									<span id="number-message"></span><br><br>
+									<span class="message" id="number-message"></span><br><br>
 								</div>
 								
 								<div>
-									 <lable>Email:</lable>
+									 <label>Email:</label>
 									 <input type="email" id="email" name="email">
-									 <span id="email-message"></span><br><br>
+									 <span class="message" id="email-message"></span><br><br>
 								</div>
 
 
@@ -321,19 +328,19 @@
 
 
 								<div>
-									 <lable>Type of filght:</lable>
+									 <label>Type of filght:</label>
 									 <select id="aircraft" name="aircraft">
-									 	<option value="fixed-wing">Tour</option>
+									 	<option value="fixed-wing">Fixed Wing</option>
 		 								<option value="amphibian-aircraft">Amphibian Aircraft</option>
 		  								<option value="stunt-plane">Stunt Plane</option>
 		  								<option value="helicopter">Helicopter</option>
 										<option value="glider">Glider</option>
 	 								 </select>
-	 								 <span id="aircraft-message"></span><br><br>
+	 								 <span class="message" id="aircraft-message"></span><br><br>
 								</div>
 
 									<div>
-		 								 <lable>Number of passengers</lable>
+		 								 <label>Number of passengers</label>
 		 								 <select id="passengers" name="passengers">
 										 	<option value="1">1</option>
 			 								<option value="2">2</option>
@@ -343,29 +350,29 @@
 											<option value="6">6</option>
 											<option value="7">7</option>
 		 								 </select>
-		 								 <span id="passenger-message"></span><br><br>
+		 								 <span class="message" id="passenger-message"></span><br><br>
 									</div>
 
 									<div>
-										<lable>Departing:</lable>
+										<label>Departing:</label>
 										<input type="date" id="departing" name="departing">
-										<span id="date-message"></span><br><br>
+										<span class="message" id="date-message"></span><br><br>
 									</div>
 
 									<div>
-										<lable>time:</lable>
+										<label>time:</label>
 										<input type="time" id="time" name="time">
-										<span id="time-message"></span><br><br>
+										<span class="message" id="time-message"></span><br><br>
 									</div>
 
 									<div>
-										<lable>Tour Duration</lable>
+										<label>Tour Duration</label>
 										<select id="duration" name="duration">
 										 	<option value="1">1</option>
 			 								<option value="2">2</option>
 			  								<option value="3">3</option>
 		 								 </select>
-										<span id="length-message"></span><br><br>
+										<span class="message" id="length-message"></span><br><br>
 									</div>
 
 
@@ -373,21 +380,21 @@
 
 
 									<div>
-										<hlable>Address:</lable>
+										<label>Address:</label>
 										<input type="text" id="address" name="address">
-										<span id="address-message"></span><br><br>
+										<span class="message" id="address-message"></span><br><br>
 									</div>
 
 									<div>
-										<lable>City:</lable>
+										<label>City:</label>
 										<input type="text" id="city" name="city">
-										<span id="city-message"></span><br><br>
+										<span class="message" id="city-message"></span><br><br>
 									</div>
 
 									<div>
-										<lable>Country:</lable>
+										<label>Country:</label>
 										<input type="text" id="country" name="country">
-										<span id="country-message"></span><br><br>
+										<span class="message" id="country-message"></span><br><br>
 									</div>
 
 
@@ -395,8 +402,8 @@
 
 								 <br>
 								 <br>
-								 <input type="submit" value="submit">
-
+								 <input id="submit" type="submit" value="submit">
+								</div>
 			    			</form>
 			    		</div>	
 
