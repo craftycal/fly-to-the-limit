@@ -322,9 +322,10 @@ p {font-size: 14px; }
 	z-index: 6;
 	background-color: #ffffff;
 	border: 2px solid #333333;
-	width: 900px;
-	height: 700px;
-	top: 100px;
+	width: 50%;
+	height: 80%;
+	overflow: scroll;
+	top: 50px;
 }
 
 #center-box {
